@@ -1,8 +1,42 @@
 //Colors
+$darker-bg: #212425;
+$lighter-bg: #252a2b;
+$standard-text-color: #fff;
+$secondary-text-color: #aeafae;
+// Margins
+$margin-top-section: 60px;
 
-//Containers
+//Display Sections
 @mixin containerStandard {
-max-width: 900px;
+max-width: 1040px;
 margin: 0 auto;
     
 }
+@mixin containerSm {
+max-width: 800px;
+margin: 0 auto;
+text-align: center;
+}
+
+@mixin titlesProperties {
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+    
+}
+@mixin displayNav {
+display: flex; 
+justify-content: space-between;
+align-items: center;  
+}
+
+@mixin listFlex {
+    ul {
+     list-style: none;
+     display: flex;
+    }
+    li a {
+    margin: 11px;
+    text-decoration: none;
+    }
+ }

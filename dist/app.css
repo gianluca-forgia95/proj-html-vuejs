@@ -9,6 +9,63 @@ body {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1040px;
   margin: 0 auto;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  padding: 0 60px;
+}
+
+.logo img {
+  max-width: 150px;
+}
+
+.links ul {
+  list-style: none;
+  display: flex;
+}
+.links li a {
+  margin: 11px;
+  text-decoration: none;
+}
+
+.links a {
+  color: #fff;
+}
+
+header {
+  height: 700px;
+  background-image: url("../img/home-banner.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.text-banner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  margin-top: 130px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 80px;
+}
+
+.btn-primary {
+  padding: 15px;
+  background: none;
+  border: 1px solid #aeafae;
+  color: #aeafae;
+  text-transform: uppercase;
+  width: 140px;
+  margin-top: 60px;
 }

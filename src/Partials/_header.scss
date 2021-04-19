@@ -1,0 +1,31 @@
+.nav-header {
+@include displayNav;
+height: 120px;
+padding: 0 60px;
+}
+.logo img {
+max-width: 150px;
+}
+.links {
+@include listFlex;
+}
+.links a{
+color: $standard-text-color;
+}
+
+header {
+height: 700px;
+background-image: url('../img/home-banner.jpg');
+background-size: cover;
+background-position: center;
+}
+.text-banner {
+@include containerSm;
+color: $standard-text-color;
+margin-top: 130px;
+}
+
+h1 {
+@include titlesProperties;
+font-size: 80px;
+}
