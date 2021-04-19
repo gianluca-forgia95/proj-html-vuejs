@@ -11,6 +11,7 @@ body {
 .container {
   max-width: 1040px;
   margin: 0 auto;
+  display: flex;
 }
 
 .container-sm {
@@ -70,6 +71,12 @@ header {
   margin-top: 60px;
   cursor: pointer;
 }
+.btn-primary.btn-login {
+  background: #d5625f;
+  color: #fff;
+  margin-top: 30px;
+  border: none;
+}
 
 h1 {
   text-align: center;
@@ -88,17 +95,65 @@ h2, h3 {
   padding: 20px 0;
 }
 
+h4 {
+  color: #fff;
+  font-size: 19px;
+}
+
 .starter {
-  height: 400px;
+  padding: 70px 0;
   background-color: #252a2b;
 }
 
+.login {
+  height: 450px;
+  background-color: #212425;
+  padding: 100px 0;
+}
+
+.cross {
+  max-width: 30px;
+}
+
 .box {
+  display: flex;
   flex-direction: column;
-  padding: 60px 0;
+  align-items: center;
 }
 .box p {
   color: #aeafae;
   font-size: 22px;
   margin-top: 60px;
+}
+.box img {
+  width: 100%;
+}
+
+.box-login {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.img-login {
+  padding: 0 30px;
+}
+
+.input-login {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  color: #aeafae;
+  line-height: 30px;
+}
+.input-login input, .input-login button {
+  width: 400px;
+}
+.input-login input {
+  border: 2px solid #aeafae;
+  background: transparent;
+  padding: 10px;
+}
+.input-login label {
+  margin-top: 20px;
 }

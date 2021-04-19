@@ -7,4 +7,10 @@ text-transform: uppercase;
 width: 140px;
 margin-top: $margin-top-section;
 cursor: pointer;
+ &.btn-login {
+  background: $active-color;
+  color: $standard-text-color;
+  margin-top: 30px;
+  border: none;
+ }
 }

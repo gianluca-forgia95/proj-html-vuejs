@@ -1,14 +1,51 @@
 .starter {
-height: 400px;
+padding: 70px 0;
 background-color: $lighter-bg ;
 }
+.login {
+height: 450px;
+background-color: $darker-bg ;
+padding: 100px 0;
+}
+.cross {
+max-width: 30px;
+}
 .box {
-flex-direction: column;
-padding: 60px 0;
+@include boxColumn;
+align-items: center;
 
  p {
   color: $secondary-text-color;
   font-size: 22px;
   margin-top: 60px;
+ }
+ img {
+ width: 100%;
+ }
+}
+
+.box-login {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.img-login {
+padding: 0 30px;
+}
+.input-login {
+@include boxColumn;
+font-size: 20px;
+color: $secondary-text-color;
+line-height: 30px;
+ input , button {
+  width: 400px;
+ }
+ input {
+  border: 2px solid $secondary-text-color;
+  background: transparent;
+  padding: 10px;
+ }
+ label {
+    margin-top: 20px;
  }
 }

@@ -11,7 +11,7 @@ $margin-top-section: 60px;
 @mixin containerStandard {
 max-width: 1040px;
 margin: 0 auto;
-    
+display: flex; 
 }
 @mixin containerSm {
 max-width: 800px;
