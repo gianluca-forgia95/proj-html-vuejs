@@ -9,3 +9,6 @@ font-family: 'Source Sans Pro', sans-serif;
 .container {
 @include containerStandard;
 }
+.container-sm {
+@include containerSm;
+}

@@ -11,6 +11,10 @@ max-width: 150px;
 }
 .links a{
 color: $standard-text-color;
+text-transform: uppercase;
+&:hover {
+color: $active-color;
+}
 }
 
 header {
@@ -19,13 +23,8 @@ background-image: url('../img/home-banner.jpg');
 background-size: cover;
 background-position: center;
 }
-.text-banner {
-@include containerSm;
-color: $standard-text-color;
-margin-top: 130px;
+.text-banner { 
+color: $standard-text-color ;
+margin-top: 100px;
 }
 
-h1 {
-@include titlesProperties;
-font-size: 80px;
-}

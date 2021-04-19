@@ -22,30 +22,38 @@
 <body>
 <header>
 <!-- Main Nav -->
- <div class="nav-header">
+ <div class="nav-header" id="root">
   <div class="logo">
     <img src="img/gym_logo_1x.png" alt="Logo">
   </div>
   <div class="links">
     <ul>
-    <li><a href="">links</a></li>
-    <li><a href="">links</a></li>
-    <li><a href="">links</a></li>
-    <li><a href="">links</a></li>
-    </ul>
+    <li v-for="link in linksNav"><a href="">{{ link }}</a></li>
+   </ul>
   </div>
  </div>
 <!-- /Main Nav -->
 <!-- Main Text -->
-<div class="text-banner">
+<div class="container-sm text-banner">
   <h1>No pain no gain</h1>
-   <p>Motivation is what gets you started, Habit is what you keep going</p>
+   <p>Motivation is what gets you started, Habit is what you keep going.</p>
    <button class="btn-primary">Join us today</button>
 </div>
 <!-- /Main Text -->
 </header>
 
 <main>
+<!-- Starter Section -->
+ <section class="starter">
+  <div class="container-sm">
+   <div class="box">
+    <h3>World Class Fitness</h3>
+    <img src="img/divider-xx-red.png" alt="divider">
+    <p>At Avada Gym, everything we do from top to bottom is of the highest quality to ensure we’re equipped to help you reach your goals of a healthy and fit lifestyle.</p>
+  </div>
+ </div>
+</section>
+<!-- /Starter Section -->
 
 </main>
 

@@ -1,0 +1,11 @@
+h1 {
+@include titlesProperties;
+font-size: 100px;
+color: $standard-text-color;
+}
+h2 , h3 {
+@include titlesProperties;
+color: $standard-text-color;
+font-size: 30px;
+padding: 20px 0;
+}

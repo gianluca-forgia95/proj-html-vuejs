@@ -1,6 +1,7 @@
 //Colors
 $darker-bg: #212425;
 $lighter-bg: #252a2b;
+$active-color: #d5625f;
 $standard-text-color: #fff;
 $secondary-text-color: #aeafae;
 // Margins
@@ -40,3 +41,9 @@ align-items: center;
     text-decoration: none;
     }
  }
+
+ @mixin boxColumn {
+ display: flex;
+ flex-direction: column;
+ }
+

@@ -1,0 +1,14 @@
+.starter {
+height: 400px;
+background-color: $lighter-bg ;
+}
+.box {
+flex-direction: column;
+padding: 60px 0;
+
+ p {
+  color: $secondary-text-color;
+  font-size: 22px;
+  margin-top: 60px;
+ }
+}

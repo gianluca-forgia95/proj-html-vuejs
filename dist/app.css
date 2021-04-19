@@ -13,6 +13,12 @@ body {
   margin: 0 auto;
 }
 
+.container-sm {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .nav-header {
   display: flex;
   justify-content: space-between;
@@ -36,6 +42,10 @@ body {
 
 .links a {
   color: #fff;
+  text-transform: uppercase;
+}
+.links a:hover {
+  color: #d5625f;
 }
 
 header {
@@ -46,18 +56,8 @@ header {
 }
 
 .text-banner {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
   color: #fff;
-  margin-top: 130px;
-}
-
-h1 {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 80px;
+  margin-top: 100px;
 }
 
 .btn-primary {
@@ -67,5 +67,38 @@ h1 {
   color: #aeafae;
   text-transform: uppercase;
   width: 140px;
+  margin-top: 60px;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 100px;
+  color: #fff;
+}
+
+h2, h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+.starter {
+  height: 400px;
+  background-color: #252a2b;
+}
+
+.box {
+  flex-direction: column;
+  padding: 60px 0;
+}
+.box p {
+  color: #aeafae;
+  font-size: 22px;
   margin-top: 60px;
 }
