@@ -22,7 +22,7 @@
 <body>
 <header>
 <!-- Main Nav -->
- <div class="nav-header" id="root">
+ <div class="nav-header" id="header-vue">
   <div class="logo">
     <img src="img/gym_logo_1x.png" alt="Logo">
   </div>
@@ -413,7 +413,34 @@
 <!-- /Sezione Goals -->
 </main>
 
-<footer>
+<footer id="footer-vue">
+  <div class="container">
+    <!-- FindUs -->
+    <div class="box">
+      <h5>How to Find us</h5>
+      <ul class="list-column">
+        <li v-for='( info , key) in findUs'><a href="">{{ key }} : {{ info }}</a></li>
+      </ul>
+    </div>
+   <!-- /FindUs -->
+   <!-- Recent Posts -->
+   <div class="box">
+     <h5>Recent posts</h5>
+     <ul class="list-column">
+       <li v-for='question in questions' class="question"><a href=""><i class="fas fa-caret-right"></i> {{ question }}</a></li>
+     </ul>
+   </div>
+   <!-- /Recent Posts -->
+   <!-- Opening Hours -->
+   <div class="box">
+     <h5>Opening Hours</h5>
+     <ul class="list-column">
+       <li v-for="info in openingHours">{{ info.range }}: {{ info.schedule }}</li>
+     </ul>
+   </div>
+   <!-- /Opening Hours -->
+
+  </div>
 
 </footer>
  
