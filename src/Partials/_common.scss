@@ -40,6 +40,7 @@ font-family: 'Source Sans Pro', sans-serif;
          padding: 25px 0;
        }
    }
+
 }
 .box-results {
  display: flex;
@@ -47,7 +48,6 @@ font-family: 'Source Sans Pro', sans-serif;
  background-color: $darker-bg;
  max-width: 550px;
  color: $secondary-text-color;
- margin-top: 50px;
   p {
    font-size: 18px;
    font-style: italic;

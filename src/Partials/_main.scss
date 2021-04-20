@@ -4,9 +4,7 @@ background-color: $lighter-bg ;
 }
 //login style
 .login {
-height: 450px;
 background-color: $darker-bg ;
-padding: 100px 0;
 }
 
 .box-login {
@@ -42,7 +40,35 @@ display: flex;
 align-items: center;
 }
 //Real world results style
-.results {
+.results , .facilities {
 background-color: $lighter-bg;
 padding: 40px 0;
+}
+//facilities
+.img-facilities img {
+ max-width: 350px;
+ transition: all 1.5s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+//quote of the day
+.quote-of-the-day {
+ @include bgImage;
+ background-image: url('../img/home-testimonial-bg.jpg');
+ height: 580px;
+ display: flex;
+ align-items: center;
+  p {
+  font-size: 40px;
+  color: $standard-text-color;
+  line-height: 50px;
+  }
+  h4 {
+  text-transform: uppercase;
+  line-height: 80px;
+  }
+  img {
+  padding: 30px 0;
+  }
 }
