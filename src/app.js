@@ -1,6 +1,7 @@
 var root = new Vue({
     el: '#root',
      data: {
+     //Struttura dati per link nav
      linksNav: [
      'Home',
      'About Us',
@@ -9,6 +10,7 @@ var root = new Vue({
      'Testimonials',
      'Blog'
      ],
+   
     
     
         },

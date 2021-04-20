@@ -2,31 +2,15 @@
 padding: 70px 0;
 background-color: $lighter-bg ;
 }
+//login style
 .login {
 height: 450px;
 background-color: $darker-bg ;
 padding: 100px 0;
 }
-.cross {
-max-width: 30px;
-}
-.box {
-@include boxColumn;
-align-items: center;
-
- p {
-  color: $secondary-text-color;
-  font-size: 22px;
-  margin-top: 60px;
- }
- img {
- width: 100%;
- }
-}
 
 .box-login {
   display: flex;
-  justify-content: space-between;
   margin: auto;
 }
 .img-login {
@@ -46,6 +30,19 @@ line-height: 30px;
   padding: 10px;
  }
  label {
-    margin-top: 20px;
+  margin-top: 20px;
  }
+}
+//activities style 
+.activities {
+background-image: url('../img/gym_bkgd_bw-compressor.jpg');
+height: 600px;
+@include bgImage;
+display: flex;
+align-items: center;
+}
+//Real world results style
+.results {
+background-color: $lighter-bg;
+padding: 40px 0;
 }

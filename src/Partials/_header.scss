@@ -20,8 +20,7 @@ color: $active-color;
 header {
 height: 700px;
 background-image: url('../img/home-banner.jpg');
-background-size: cover;
-background-position: center;
+@include bgImage;
 }
 .text-banner { 
 color: $standard-text-color ;
