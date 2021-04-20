@@ -40,13 +40,14 @@ display: flex;
 align-items: center;
 }
 //Sections style
-.results , .facilities  {
+.results , .facilities , .performance-news  {
 background-color: $lighter-bg;
 padding: 40px 0;
 }
 .trainers {
  @include listFlex;
- background-color: $lighter-bg;
+ background-color: $darker-bg;
+ padding: 30px 0;
 }
 //facilities
 .img-facilities img {
@@ -102,4 +103,8 @@ padding: 40px 0;
    i {
     color: $standard-text-color;
    }
+}
+//news
+.text-news {
+ padding: 15px;
 }

@@ -15,6 +15,12 @@ body {
   justify-content: space-between;
   padding: 40px 0;
 }
+.container.container-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  grid-row-gap: 20px;
+  justify-items: start;
+}
 
 .container-sm {
   width: 900px;
@@ -39,6 +45,8 @@ body {
   text-align: center;
   margin: 20px;
   max-width: 250px;
+  height: auto;
+  overflow: hidden;
 }
 .box.box-activity p {
   margin-top: 25px;
@@ -61,6 +69,27 @@ body {
 }
 .box.box-trainer img:hover {
   transform: scale(1.1);
+}
+.box.box-performance {
+  justify-content: flex-start;
+}
+.box.box-performance h5 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+.box.box-performance p {
+  font-size: 18px;
+  margin-top: 11px;
+}
+
+.box-sub, .box-up {
+  align-self: flex-start;
+  background-color: #212425;
+}
+
+.box-sub {
+  margin-top: 20px;
 }
 
 .box-results {
@@ -231,13 +260,14 @@ h4 {
   align-items: center;
 }
 
-.results, .facilities {
+.results, .facilities, .performance-news {
   background-color: #252a2b;
   padding: 40px 0;
 }
 
 .trainers {
-  background-color: #252a2b;
+  background-color: #212425;
+  padding: 30px 0;
 }
 .trainers ul {
   list-style: none;
@@ -303,4 +333,48 @@ h4 {
 }
 .trainer-descr i {
   color: #fff;
+}
+
+.text-news {
+  padding: 15px;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.image {
+  display: block;
+  max-width: 380px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #d5625f;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+
+.img-wrapper:hover .overlay {
+  width: 100%;
+}
+
+.text-overlay {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  white-space: nowrap;
+}
+.text-overlay i {
+  margin: 10px;
 }

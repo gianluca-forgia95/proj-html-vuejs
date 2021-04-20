@@ -1,0 +1,36 @@
+.img-wrapper {
+position: relative;
+}
+
+.image {
+display: block;
+max-width: 380px;
+height: auto;
+}
+.overlay {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: $active-color;
+overflow: hidden;
+width: 0;
+height: 100%;
+transition: .5s ease;
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 0.9;
+}
+.img-wrapper:hover .overlay {
+width: 100%;
+}
+.text-overlay {
+color: white;
+font-size: 20px;
+position: absolute;
+white-space: nowrap;
+  i {
+   margin: 10px;
+  }
+}

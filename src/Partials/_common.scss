@@ -8,6 +8,10 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 .container {
 @include containerStandard;
+  &.container-grid {
+    @include containerGrid;
+    justify-items: start;
+  }
 }
 .container-sm {
 @include containerSm;
@@ -29,6 +33,8 @@ font-family: 'Source Sans Pro', sans-serif;
       text-align: center;
       margin: 20px;
       max-width: 250px;
+      height: auto;
+      overflow: hidden;
         p {
          margin-top: 25px;
          line-height: 22px;
@@ -51,9 +57,32 @@ font-family: 'Source Sans Pro', sans-serif;
          transform: scale(1.1);
        }
       }
+   
    }
 
+   &.box-performance {
+   justify-content: flex-start;
+    h5 {
+    color: $standard-text-color;
+    font-weight: bold;
+    font-size: 20px;
+    }
+    p {
+    font-size: 18px;
+    margin-top: 11px;
+    }
+   }
+  
 }
+.box-sub , .box-up {
+align-self: flex-start;
+background-color: $darker-bg;
+}
+.box-sub {
+ margin-top: 20px;
+}
+
+
 .box-results {
  display: flex;
  padding: 40px;
