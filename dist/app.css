@@ -110,18 +110,6 @@ body {
   line-height: 40px;
 }
 
-.img-guy {
-  padding-right: 10px;
-}
-
-.cross {
-  max-width: 30px;
-}
-
-.single-cross {
-  max-width: 15px;
-}
-
 .nav-header {
   display: flex;
   justify-content: space-between;
@@ -170,7 +158,7 @@ header {
   border: 2px solid #aeafae;
   color: #aeafae;
   text-transform: uppercase;
-  width: 140px;
+  width: 180px;
   margin-top: 60px;
   cursor: pointer;
 }
@@ -224,8 +212,17 @@ h4 {
   background-color: #252a2b;
 }
 
+.cross {
+  max-width: 30px;
+}
+
+.single-cross {
+  max-width: 15px;
+}
+
 .login {
   background-color: #212425;
+  padding: 90px 0;
 }
 
 .box-login {
@@ -234,7 +231,7 @@ h4 {
 }
 
 .img-login {
-  padding: 0 30px;
+  padding: 0 40px;
 }
 
 .input-login {
@@ -257,13 +254,13 @@ h4 {
 }
 
 .activities {
-  background-image: url("../img/gym_bkgd_bw-compressor.jpg");
-  height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   align-items: center;
+  background-image: url("../img/gym_bkgd_bw-compressor.jpg");
+  height: 600px;
 }
 
 .results, .facilities, .performance-news {
@@ -282,6 +279,10 @@ h4 {
 .trainers li a {
   margin: 11px;
   text-decoration: none;
+}
+
+.img-guy {
+  padding-right: 10px;
 }
 
 .img-facilities img {
@@ -327,12 +328,12 @@ h4 {
   padding: 20px 0;
 }
 .trainer-descr li {
+  display: flex;
+  align-items: center;
   width: 50px;
   height: 50px;
   background-color: #212425;
   margin: 10px;
-  display: flex;
-  align-items: center;
   justify-content: center;
   border-radius: 5px;
   cursor: pointer;
@@ -362,6 +363,24 @@ h4 {
 }
 .goals-text p {
   font-size: 22px;
+}
+
+.divider {
+  position: relative;
+}
+
+.divider-bottom {
+  z-index: 100;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #252a2b;
+  content: "";
+  transform: rotate(360deg);
 }
 
 #footer-vue {

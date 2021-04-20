@@ -31,6 +31,7 @@ font-family: 'Source Sans Pro', sans-serif;
   img {
      width: 100%;
      }
+     //Box Sezione Activity
    &.box-activity {
       text-align: center;
       margin: 20px;
@@ -48,6 +49,7 @@ font-family: 'Source Sans Pro', sans-serif;
          padding: 25px 0;
        }
    }
+   //Box Sezione Trainer
    &.box-trainer {
    max-width: 380px;
    background-color: $grey-bg;
@@ -61,7 +63,7 @@ font-family: 'Source Sans Pro', sans-serif;
       }
    
    }
-
+   //Box Sezione Performance
    &.box-performance {
    justify-content: flex-start;
     h5 {
@@ -76,6 +78,8 @@ font-family: 'Source Sans Pro', sans-serif;
    }
   
 }
+
+//Box up/sub
 .box-sub , .box-up {
 align-self: flex-start;
 background-color: $darker-bg;
@@ -84,7 +88,7 @@ background-color: $darker-bg;
  margin-top: 20px;
 }
 
-
+//Box Sezione Results
 .box-results {
  display: flex;
  padding: 40px;
@@ -100,13 +104,4 @@ background-color: $darker-bg;
     line-height: 40px;
   }
 }
-.img-guy {
- padding-right: 10px;
-}
-//Crosses
-.cross {
- max-width: 30px;
- }
- .single-cross {
-max-width: 15px;
- }
+
