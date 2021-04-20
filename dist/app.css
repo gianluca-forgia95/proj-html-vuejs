@@ -50,6 +50,18 @@ body {
   color: #fff;
   padding: 25px 0;
 }
+.box.box-trainer {
+  max-width: 380px;
+  background-color: #333638;
+  align-items: flex-start;
+}
+.box.box-trainer img {
+  max-width: 380px;
+  transition: all 1.2s;
+}
+.box.box-trainer img:hover {
+  transform: scale(1.1);
+}
 
 .box-results {
   display: flex;
@@ -224,6 +236,18 @@ h4 {
   padding: 40px 0;
 }
 
+.trainers {
+  background-color: #252a2b;
+}
+.trainers ul {
+  list-style: none;
+  display: flex;
+}
+.trainers li a {
+  margin: 11px;
+  text-decoration: none;
+}
+
 .img-facilities img {
   max-width: 350px;
   transition: all 1.5s;
@@ -252,4 +276,31 @@ h4 {
 }
 .quote-of-the-day img {
   padding: 30px 0;
+}
+
+.trainer-descr {
+  padding: 20px;
+}
+.trainer-descr h5 {
+  color: #fff;
+  font-size: 20px;
+}
+.trainer-descr p {
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 20px 0;
+}
+.trainer-descr li {
+  width: 50px;
+  height: 50px;
+  background-color: #212425;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.trainer-descr i {
+  color: #fff;
 }

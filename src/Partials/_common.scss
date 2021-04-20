@@ -40,6 +40,18 @@ font-family: 'Source Sans Pro', sans-serif;
          padding: 25px 0;
        }
    }
+   &.box-trainer {
+   max-width: 380px;
+   background-color: $grey-bg;
+   align-items: flex-start;
+      img {
+      max-width: 380px;
+      transition: all 1.2s;
+       &:hover {
+         transform: scale(1.1);
+       }
+      }
+   }
 
 }
 .box-results {
