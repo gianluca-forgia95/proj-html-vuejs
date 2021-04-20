@@ -10,7 +10,9 @@ font-family: 'Source Sans Pro', sans-serif;
 @include containerStandard;
   &.container-grid {
     @include containerGrid;
-    justify-items: start;
+  }
+  &.container-cnt {
+  @include containerCentered;
   }
 }
 .container-sm {

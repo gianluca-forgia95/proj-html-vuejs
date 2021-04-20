@@ -19,7 +19,9 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 380px);
   grid-row-gap: 20px;
-  justify-items: start;
+}
+.container.container-cnt {
+  align-items: center;
 }
 
 .container-sm {
@@ -190,6 +192,10 @@ header {
   background-color: #d5625f;
   color: #aeafae;
 }
+.btn-primary.btn-end {
+  color: #fff;
+  border: 1px solid #fff;
+}
 
 h1 {
   text-align: center;
@@ -337,6 +343,25 @@ h4 {
 
 .text-news {
   padding: 15px;
+}
+
+.goals {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/home-parallax.jpg");
+  height: 200px;
+}
+
+.goals-text {
+  color: #fff;
+}
+.goals-text h4 {
+  font-size: 35px;
+  line-height: 80px;
+}
+.goals-text p {
+  font-size: 22px;
 }
 
 .img-wrapper {

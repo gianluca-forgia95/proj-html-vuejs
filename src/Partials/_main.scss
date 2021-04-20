@@ -31,7 +31,7 @@ line-height: 30px;
   margin-top: 20px;
  }
 }
-//activities style 
+//Sections style
 .activities {
 background-image: url('../img/gym_bkgd_bw-compressor.jpg');
 height: 600px;
@@ -39,7 +39,7 @@ height: 600px;
 display: flex;
 align-items: center;
 }
-//Sections style
+
 .results , .facilities , .performance-news  {
 background-color: $lighter-bg;
 padding: 40px 0;
@@ -107,4 +107,20 @@ padding: 40px 0;
 //news
 .text-news {
  padding: 15px;
+}
+//goals
+.goals {
+  @include bgImage;
+  background-image: url('../img/home-parallax.jpg');
+  height: 200px;
+  }
+.goals-text {
+ color: $standard-text-color;
+  h4 {
+   font-size: 35px;
+   line-height: 80px;
+  }
+  p {
+   font-size: 22px;
+  }
 }

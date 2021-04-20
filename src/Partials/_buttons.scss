@@ -25,4 +25,8 @@ font-size: 22px;
     color: $secondary-text-color;
   }
  }
+ &.btn-end {
+   color: $standard-text-color;
+   border: 1px solid $standard-text-color;
+ }
 }
