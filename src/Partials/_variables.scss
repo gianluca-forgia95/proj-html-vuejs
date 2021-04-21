@@ -34,7 +34,14 @@ align-items: center;
  grid-template-columns: repeat(3, 380px);
  grid-row-gap: 28px;
  }
-
+ @mixin containerGridTwocol {
+display: grid;
+grid-template-columns: repeat(2, 300px);
+ }
+ @mixin containerGridFourcol {
+display: grid;
+grid-template-columns: repeat(4, 180px);
+ }
 
 @mixin titlesProperties {
 text-align: center;

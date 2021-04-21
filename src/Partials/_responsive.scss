@@ -1,5 +1,6 @@
 
 @media screen and (max-width: 810px) {
+//Nav Header
 .links {
  display: none;
 }
@@ -14,7 +15,6 @@
   }
   
 }
-
 .menu-resp {
 display: flex;
 flex-direction: column;
@@ -30,8 +30,66 @@ a {
  line-height: 20px;
 }
 }
+//Typo
+h1 {
+ font-size: 50px;
+}
+h2 , h3 {
+font-size: 22px;
+}
+h4 {
+font-size: 14px;
+}
+p {
+font-size: 13px;
+}
+//Containers 
+.container {
+ max-width: 650px;
+ flex-wrap: wrap;
+ justify-content: center;
+  &.container-foot {
+    justify-content: space-evenly;
+  }
+}
+.container-sm {
+max-width: 420px;
+}
+//sections
+.activities {
+@include containerGridTwocol;
+}
 
+.quote-of-the-day {
+ p {
+    font-size: 22px;
+ }
+}
+.box-login {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.button-join {
+display: none;
+}
+footer {
+ h5 {
+ font-size: 14px;
+ }
+ h6 {
+font-size: 12px;
+ }
+}
+.discount-img  {
+ margin-left: 20px;
+}
+.social {
+margin-top: 20px;
+}
 }  
+
+
 
 @media screen and (max-width: 600px) {
 }  
