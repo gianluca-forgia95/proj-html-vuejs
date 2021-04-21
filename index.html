@@ -20,16 +20,17 @@
     <!-- /CSS -->
 </head>
 <body>
+<div id="root">
 <header>
 <!-- Main Nav -->
- <div class="nav-header" id="header-vue">
+ <div class="nav-header">
   <div class="logo">
     <img src="img/gym_logo_1x.png" alt="Logo">
   </div>
   <div class="links">
     <ul>
     <!-- Con la direttiva v-for stampo i link della nav -->
-    <li v-for="link in linksNav"><a href="">{{ link }}</a></li>
+    <li v-for="link in linksNav"><a :href="link.dest">{{ link.sect }}</a></li>
    </ul>
   </div>
  </div>
@@ -264,6 +265,11 @@
    </div>
  </section>
 <!-- /Sezione Trainers -->
+<!-- Divider -->
+<div class="divider">
+  <div class="divider-bottom trainer-div"></div>
+</div>
+<!-- /Divider -->
 
 <!-- Sezione Performance News -->
 <section class="performance-news">
@@ -423,7 +429,7 @@
 <!-- /Sezione Goals -->
 </main>
 
-<footer id="footer-vue">
+<footer>
  <!-- /Footer Top -->
   <div class="footer-top">
   <div class="container">
@@ -487,7 +493,7 @@
 <!-- /Footer Bottom -->
 
 </footer>
- 
+ </div> 
     
  
 

@@ -158,5 +158,7 @@ position: relative;
   border-right: 20px solid transparent;
   border-top: 20px solid $lighter-bg;
   content: "";
-  transform: rotate(360deg);
+   &.trainer-div {
+     border-top:  20px solid $darker-bg;
+   }
 }

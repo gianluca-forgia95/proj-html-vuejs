@@ -162,6 +162,10 @@ header {
   margin-top: 60px;
   cursor: pointer;
 }
+.btn-primary:hover {
+  border: 2px solid #fff;
+  color: #fff;
+}
 .btn-primary.btn-login {
   background: #d5625f;
   color: #fff;
@@ -198,7 +202,7 @@ h2, h3 {
   text-transform: uppercase;
   font-weight: bold;
   color: #fff;
-  font-size: 30px;
+  font-size: 40px;
   padding: 20px 0;
 }
 
@@ -381,7 +385,9 @@ h4 {
   border-right: 20px solid transparent;
   border-top: 20px solid #252a2b;
   content: "";
-  transform: rotate(360deg);
+}
+.divider-bottom.trainer-div {
+  border-top: 20px solid #1e2123;
 }
 
 .footer-top {
