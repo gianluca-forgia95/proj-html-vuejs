@@ -29,7 +29,7 @@ var root = new Vue({
        },
      ],
      //Dati Main
-
+    //Trainers Section
      trainers: [
        {
          nome: 'Ann Baker',
@@ -47,6 +47,17 @@ var root = new Vue({
         idImg: '4',
       },
      ],
+
+     //Facilities Section
+     imagesFacilities: [
+       'https://avada.theme-fusion.com/gym/wp-content/uploads/sites/9/2015/05/home-image1.jpg' ,
+       'https://avada.theme-fusion.com/gym/wp-content/uploads/sites/9/2015/05/home-image2.jpg',
+       'https://avada.theme-fusion.com/gym/wp-content/uploads/sites/9/2015/05/home-image3.jpg',
+       'https://avada.theme-fusion.com/gym/wp-content/uploads/sites/9/2015/12/home-image4.jpg',
+       'https://avada.theme-fusion.com/gym/wp-content/uploads/sites/9/2015/05/home-image54.jpg',
+       'https://avada.theme-fusion.com/gym/wp-content/uploads/sites/9/2015/05/home-image6.jpg'
+     ],
+     
     //Dati Footer
        //Uso un oggetto come struttura dati per l'indirizzo/e-mail/telefono
        findUs: {
