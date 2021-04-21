@@ -217,48 +217,19 @@
      <img class="cross" src="img/divider-xx-red.png" alt="divider">
    </div>
    <div class="container">
-     <div class="box box-trainer">
-       <img src="img/trainer1.jpg" alt="">
+   <!-- Trainer Box Vuejs -->
+     <div class="box box-trainer" v-for="trainer in trainers">
+       <img :src="'img/trainer'+ trainer.idImg +'.jpg'" alt="Trainer Img">
        <div class="trainer-descr">
-       <h5>Ann Baker</h5>
-       <h5>Personal Trainer</h5>
+       <h5>{{ trainer.nome }}</h5>
+       <h5>{{ trainer.role }}</h5>
        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.</p>
        <ul class="list-social">
-         <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-         <li><a href=""><i class="fab fa-twitter"></i></a></li>
-         <li><a href=""><i class="fab fa-instagram"></i></a></li>
+         <li v-for="icon in socialIcons"><a href=""><i :class="icon.fam + icon.prefix + icon.id"></i></a></li>
        </ul>
       </div>
      </div>
-
-     <div class="box box-trainer">
-      <img src="img/trainer3.jpg" alt="">
-      <div class="trainer-descr">
-      <h5>Anne Warren</h5>
-      <h5>Personal Trainer</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.</p>
-      <ul class="list-social">
-        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-        <li><a href=""><i class="fab fa-instagram"></i></a></li>
-      </ul>
-     </div>
-    </div>
-
-    <div class="box box-trainer">
-      <img src="img/trainer4.jpg" alt="">
-      <div class="trainer-descr">
-      <h5>Peter Rice</h5>
-      <h5>Personal Trainer</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.</p>
-      <ul class="list-social" >
-        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-        <li><a href=""><i class="fab fa-instagram"></i></a></li>
-      </ul>
-     </div>
-    </div>
-
+   <!-- Trainer Box Vuejs -->
    </div>
    <div class="box">
      <button class="btn-primary">View All trainers</button>

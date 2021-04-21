@@ -1,14 +1,8 @@
 var root = new Vue({
     el: '#root',
      data: {
-     //Struttura dati per link nav
+     //Dati Nav
      linksNav: [
-    //  'Home',
-    //  'About Us',
-    //  'Facilities',
-    //  'Membership',
-    //  'Testimonials',
-    //  'Blog'
       {
        sect: 'Home',
        dest: '#',
@@ -34,7 +28,26 @@ var root = new Vue({
         dest: '#',
        },
      ],
+     //Dati Main
 
+     trainers: [
+       {
+         nome: 'Ann Baker',
+         role: 'Personal Trainer',
+         idImg: '1',
+       },
+       {
+        nome: 'Anne Warren',
+        role: 'Personal Trainer',
+        idImg: '3',
+      },
+      {
+        nome: 'Peter Rice',
+        role: 'Personal Trainer',
+        idImg: '4',
+      },
+     ],
+    //Dati Footer
        //Uso un oggetto come struttura dati per l'indirizzo/e-mail/telefono
        findUs: {
         Address: '12345 North Main Street',
@@ -69,25 +82,25 @@ var root = new Vue({
      
       'Powered by WordPress',
      ],
-   //Per le icone social uso un array di oggetti con le proprietà che nel codice mostrerò con la direttiva v-bind
+     //Per le icone social uso un array di oggetti con le proprietà che nel codice mostrerò con la direttiva v-bind
      socialIcons: [
-       {
-         fam: 'fab ',
-         prefix: 'fa-',
-         id: 'facebook-f',
-       },
-       {
-         fam: 'fab ',
-         prefix: 'fa-',
-         id: 'twitter',
-       },
-       {
-         fam: 'fab ',
-         prefix: 'fa-',
-         id: 'instagram',
-         
-       },
-     ]
+      {
+        fam: 'fab ',
+        prefix: 'fa-',
+        id: 'facebook-f',
+      },
+      {
+        fam: 'fab ',
+        prefix: 'fa-',
+        id: 'twitter',
+      },
+      {
+        fam: 'fab ',
+        prefix: 'fa-',
+        id: 'instagram',
+        
+      },
+    ]
     
    
     
