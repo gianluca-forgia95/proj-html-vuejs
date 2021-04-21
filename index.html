@@ -33,6 +33,18 @@
     <li v-for="link in linksNav"><a :href="link.dest">{{ link.sect }}</a></li>
    </ul>
   </div>
+  <div class="burger-menu" @click="showMenu = !showMenu">
+    <div v-if="!showMenu">
+      <button><i class="fas fa-bars"></i></button>
+    </div>
+    <div v-else class="menu-resp">
+      <ul>
+        <li v-for="link in linksNav"><a :href="link.dest">{{ link.sect }}</a></li>
+       </ul>
+    </div>
+   
+  </div>
+  
  </div>
 <!-- /Main Nav -->
 <!-- Main Text -->

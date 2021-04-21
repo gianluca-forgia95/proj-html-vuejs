@@ -139,12 +139,16 @@ body {
   color: #d5625f;
 }
 
+.burger-menu {
+  display: none;
+}
+
 header {
-  height: 700px;
   background-image: url("../img/home-banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 100vh;
 }
 
 .text-banner {
@@ -500,4 +504,37 @@ h4 {
 }
 .text-overlay i {
   margin: 10px;
+}
+
+@media screen and (max-width: 810px) {
+  .links {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+  .burger-menu button {
+    background: none;
+    color: #fff;
+    border: transparent;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .menu-resp {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .menu-resp ul {
+    list-style: none;
+  }
+  .menu-resp a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 20px;
+  }
 }

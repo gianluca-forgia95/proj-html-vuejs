@@ -28,6 +28,7 @@ var root = new Vue({
         dest: '#',
        },
      ],
+     showMenu: false,
      //Dati Main
     //Trainers Section
      trainers: [

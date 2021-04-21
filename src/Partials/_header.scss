@@ -16,11 +16,14 @@ text-transform: uppercase;
 color: $active-color;
 }
 }
-
+.burger-menu {
+display: none;
+}
 header {
-height: 700px;
+// height: 700px;
 background-image: url('../img/home-banner.jpg');
 @include bgImage;
+height: 100vh;
 }
 .text-banner { 
 color: $standard-text-color ;
