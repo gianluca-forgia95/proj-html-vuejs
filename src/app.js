@@ -48,7 +48,29 @@ var root = new Vue({
         idImg: '4',
       },
      ],
-
+     //Activities Section
+    activities: [
+      {
+        icon:"fas fa-fire-alt",
+        title:"Strength & Conditioning",
+        divider:"img/divider-x-red.png"
+      },
+      {
+        icon:"fas fa-bicycle",
+        title:"Fitness & Cardio",
+        divider:"img/divider-x-red.png"
+      },
+      {
+        icon:"fab fa-skyatlas",
+        title:"Flexibility & Rest",
+        divider:"img/divider-x-red.png"
+      },
+      {
+        icon:"fas fa-heartbeat",
+        title:"Healt & Diet",
+        divider:"img/divider-x-red.png"
+      },
+    ],
      //Facilities Section
      imagesFacilities: [
        'https://avada.theme-fusion.com/gym/wp-content/uploads/sites/9/2015/05/home-image1.jpg' ,
@@ -100,17 +122,22 @@ var root = new Vue({
         fam: 'fab ',
         prefix: 'fa-',
         id: 'facebook-f',
+        link:'https://it-it.facebook.com/',
+        target: '_blank'
       },
       {
         fam: 'fab ',
         prefix: 'fa-',
         id: 'twitter',
+        link:'https://twitter.com/?lang=it',
+        target: '_blank'
       },
       {
         fam: 'fab ',
         prefix: 'fa-',
         id: 'instagram',
-        
+        link: 'https://www.instagram.com/',
+        target: '_blank'
       },
     ]
     

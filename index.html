@@ -100,28 +100,10 @@
 <!-- Sezione Attività -->
 <section class="activities">
   <div class="container">
-    <div class="box box-activity">
-      <button class="btn-primary btn-activity"><i class="fas fa-fire-alt"></i></button>
-      <h5>Strength & Conditioning</h5>
-      <img class="single-cross" src="img/divider-x-red.png" alt="divider">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.</p>
-    </div>
-    <div class="box box-activity">
-      <button class="btn-primary btn-activity"><i class="fas fa-bicycle"></i></button>
-      <h5>Fitness & Cardio</h5>
-      <img class="single-cross" src="img/divider-x-red.png" alt="divider">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.</p>
-    </div>
-    <div class="box box-activity">
-      <button class="btn-primary btn-activity"><i class="fab fa-skyatlas"></i></button>
-      <h5>Flexibility & Rest</h5>
-      <img class="single-cross" src="img/divider-x-red.png" alt="divider">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.</p>
-    </div>
-    <div class="box box-activity">
-      <button class="btn-primary btn-activity"><i class="fas fa-heartbeat"></i></button>
-      <h5>Healt & Diet</h5>
-      <img class="single-cross" src="img/divider-x-red.png" alt="divider">
+    <div class="box box-activity" v-for="info in activities">
+      <button class="btn-primary btn-activity"><i :class="info.icon"></i></button>
+      <h5>{{ info.title }}</h5>
+      <img class="single-cross" :src=" info.divider " alt="divider">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.</p>
     </div>
   </div>
@@ -218,7 +200,7 @@
        <h5>{{ trainer.role }}</h5>
        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.</p>
        <ul class="list-social">
-         <li v-for="icon in socialIcons"><a href=""><i :class="icon.fam + icon.prefix + icon.id"></i></a></li>
+         <li v-for="icon in socialIcons"><a :href="icon.link" :target="icon.target"><i :class="icon.fam + icon.prefix + icon.id"></i></a></li>
        </ul>
       </div>
      </div>
@@ -447,7 +429,7 @@
 
   <div class="social">
     <ul class="list-social" id="footer-icons">
-      <li v-for="icon in socialIcons"><a href=""><i :class="icon.fam + icon.prefix + icon.id"></i></a></li>
+      <li v-for="icon in socialIcons"><a :href="icon.link" :target="icon.target" ><i :class="icon.fam + icon.prefix + icon.id"></i></a></li>
     </ul>
   </div>
       
