@@ -1,11 +1,26 @@
-#footer-vue {
-background-color: $lighter-bg;
+.footer-top {
+background-color: $darker-bg;
   h5 {
    text-transform: uppercase;
    font-size: 20px;
    color: $secondary-text-color;
    padding: 50px 0;
+   font-weight: lighter;
   }
+  h6 {
+  font-size: 15px;
+  font-weight: lighter;
+  }
+  p {
+   font-size: 15px;
+   margin-top: 0;
+   color: $grey-bg;
+  }
+  
+}
+
+.footer-bottom {
+background-color: $lighter-bg;
 }
 
 .list-column {
@@ -23,6 +38,33 @@ color: $secondary-text-color;
 }
 
 .question {
- border-bottom: 1px solid #6b6b6b;
+ border-bottom: 1px solid $grey-bg;
  padding-bottom: 15px;
+}
+
+.discount-img {
+margin-top: 40px;
+cursor: pointer;
+}
+
+
+.copyright {
+@include listFlex;
+ li {
+  color: $secondary-text-color;
+  padding: 0 10px;
+  border-right: 2px solid $secondary-text-color;
+ }
+ :nth-child(4) {
+   border-right: none;
+ }
+}
+
+.social {
+  ul {
+   display: flex;
+  }
+  li {
+  background-color: $active-color;
+  }
 }

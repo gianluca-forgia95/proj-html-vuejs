@@ -250,7 +250,7 @@
       <h5>Peter Rice</h5>
       <h5>Personal Trainer</h5>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat.</p>
-      <ul class="list-social">
+      <ul class="list-social" >
         <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
         <li><a href=""><i class="fab fa-twitter"></i></a></li>
         <li><a href=""><i class="fab fa-instagram"></i></a></li>
@@ -424,6 +424,8 @@
 </main>
 
 <footer id="footer-vue">
+ <!-- /Footer Top -->
+  <div class="footer-top">
   <div class="container">
     <!-- FindUs -->
     <div class="box">
@@ -444,13 +446,45 @@
    <!-- Opening Hours -->
    <div class="box">
      <h5>Opening Hours</h5>
-     <ul class="list-column">
-       <li v-for="info in openingHours">{{ info.range }}: {{ info.schedule }}</li>
-     </ul>
+      <ul class="list-column">
+        <li v-for="info in openingHours">
+          <h6>{{ info.type }} {{ info.range }}</h6>
+          <p>{{ info.schedule }}</p>
+        </li>
+      </ul>
    </div>
    <!-- /Opening Hours -->
+   <!-- Discount img -->
+   <div class="box">
+     <div class="discount-img">
+       <img src="img/gym_ad-compressor.jpg" alt="Discount">
+     </div>
+   </div>
+    <!-- /Discount img -->
 
   </div>
+</div>
+<!-- /Footer Top -->
+<!-- Footer Bottom -->
+<div class="footer-bottom">
+  <div class="container container-cnt">
+    <div class="copyright">
+      <ul>
+        <li v-for="info in copyrightInfo "> {{ info }}</li>
+      </ul>
+       
+    </div>
+
+  <div class="social">
+    <ul class="list-social" id="footer-icons">
+      <li v-for="icon in socialIcons"><a href=""><i :class="icon.fam + icon.prefix + icon.id"></i></a></li>
+    </ul>
+  </div>
+      
+  
+  </div>
+</div>
+<!-- /Footer Bottom -->
 
 </footer>
  

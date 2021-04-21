@@ -36,14 +36,45 @@ var root = new Vue({
 
        openingHours: [
           {
+            type: 'Weekdays',
             range: 'Monday-Friday',
             schedule: '9:00 - 21:00'
           },
           {
+            type: 'Weekends',
             range: 'Saturday-Sunday',
             schedule: '9:00 - 19:00'
           },
-       ]
+       ],
+
+      copyrightInfo: [
+       '© Copyright 2012 - 2021 ',
+       
+       'Avada Theme by Theme Fusion ',
+       
+       'All Rights Reserved',
+      
+       'Powered by WordPress',
+      ],
+
+      socialIcons: [
+        {
+          fam: 'fab ',
+          prefix: 'fa-',
+          id: 'facebook-f',
+        },
+        {
+          fam: 'fab ',
+          prefix: 'fa-',
+          id: 'twitter',
+        },
+        {
+          fam: 'fab ',
+          prefix: 'fa-',
+          id: 'instagram',
+          
+        },
+      ]
      
       
       
