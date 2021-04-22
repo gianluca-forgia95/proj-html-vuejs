@@ -116,53 +116,22 @@
      <img class="cross" src="img/divider-xx-red.png" alt="divider">
    </div>
 <!-- First Row -->
-   <div class="container">
-     <div class="box-results">
+   <div class="container container-two-wrap">
+     <div class="box-results" v-for="info in realWorldResults">
        <div class="img-guy">
-         <img src="img/review_1-compressor.jpg" alt="review 1">
+         <img :src="info.image" alt="reviewer img">
        </div>
        <div class="results-text">
-         <p>“The trainers at Avada Gym have helped me reach my fitness goals beyond anything I could of hoped for. I love it!”</p>
-         <h5>– Tara Smith</h5>
+         <p>{{ info.review }}</p>
+         <h5>– {{ info.id }}</h5>
        </div>
      </div>
-
-     <div class="box-results">
-      <div class="img-guy">
-        <img src="img/review_3-compressor-2.jpg" alt="review 3">
-      </div>
-      <div class="results-text">
-        <p>“The facilities at Avada Gym stood out to me the most. They are well maintained and have high quality equipment.”</p>
-        <h5>– Simon Chel</h5>
-      </div>
-    </div>
-   </div>
-<!-- /First Row -->
-<!-- Second Row -->
-   <div class="container">
-    <div class="box-results">
-      <div class="img-guy">
-        <img src="img/review_2-compressor.jpg" alt="review 4">
-      </div>
-      <div class="results-text">
-        <p>“No bad things to say about Avada Gym, they are top notch at every corner and truly take care of their customers.”</p>
-        <h5>– Jeff Glum</h5>
-      </div>
-    </div>
-
-    <div class="box-results">
-     <div class="img-guy">
-       <img src="img/review_4-compressor-2.jpg" alt="review 1">
-     </div>
-     <div class="results-text">
-       <p>“The atmosphere at Avada Gym is amazing, the people are even better. All in all, it is a great place to work out.”</p>
-       <h5>– Simon Chel</h5>
-     </div>
-   </div>
   </div>
-  <!-- /Second Row -->
+ 
  </section>
 <!-- /Sezione Real World Results -->
+
+
 <!-- Sezione Facilities -->
  <section class="facilities">
    <div class="box">
@@ -441,7 +410,6 @@
 </footer>
  </div> 
     
- 
 
 
 <script src="src/app.js"></script>

@@ -23,6 +23,9 @@ body {
 .container.container-cnt {
   align-items: center;
 }
+.container.container-two-wrap {
+  flex-wrap: wrap;
+}
 
 .container-sm {
   width: 900px;
@@ -100,6 +103,7 @@ body {
   background-color: #1e2123;
   max-width: 550px;
   color: #aeafae;
+  margin-bottom: 20px;
 }
 .box-results p {
   font-size: 18px;
@@ -505,6 +509,20 @@ h4 {
   margin: 10px;
 }
 
+@media screen and (max-width: 1050px) {
+  .box-results {
+    max-width: 400px;
+    margin-left: 20px;
+  }
+
+  .container-resp {
+    justify-content: center;
+  }
+
+  .img-facilities img {
+    flex-basis: 50%;
+  }
+}
 @media screen and (max-width: 810px) {
   .links {
     display: none;

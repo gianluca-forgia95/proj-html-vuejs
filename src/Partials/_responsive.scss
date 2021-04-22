@@ -1,3 +1,22 @@
+@media screen and (max-width: 1050px) {
+.box-results {
+ max-width: 400px;
+ margin-left: 20px;
+}
+
+.container-resp {
+  justify-content: center;
+}
+
+.img-facilities img {
+ flex-basis: 50%;
+}
+
+
+}
+
+
+
 
 @media screen and (max-width: 810px) {
 //Nav Header

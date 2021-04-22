@@ -80,6 +80,29 @@ var root = new Vue({
        'https://avada.theme-fusion.com/gym/wp-content/uploads/sites/9/2015/05/home-image54.jpg',
        'https://avada.theme-fusion.com/gym/wp-content/uploads/sites/9/2015/05/home-image6.jpg'
      ],
+     //RealWorldResult Section
+     realWorldResults: [
+       {
+         image: 'img/review_1-compressor.jpg',
+         id: 'Tara Smith',
+         review: ' “The trainers at Avada Gym have helped me reach my fitness goals beyond anything I could of hoped for. I love it!” '
+       },
+       {
+        image: 'img/review_3-compressor-2.jpg',
+        id: 'Simon Chel',
+        review: ' “The facilities at Avada Gym stood out to me the most. They are well maintained and have high quality equipment.” '
+      },
+      {
+        image: 'img/review_2-compressor.jpg',
+        id: 'Jeff Glum',
+        review: ' “No bad things to say about Avada Gym, they are top notch at every corner and truly take care of their customers.” '
+      },
+      {
+        image: 'img/review_4-compressor-2.jpg',
+        id: 'Simon Chel',
+        review: ' “The atmosphere at Avada Gym is amazing, the people are even better. All in all, it is a great place to work out.” '
+      }
+     ],
      
     //Dati Footer
        //Uso un oggetto come struttura dati per l'indirizzo/e-mail/telefono
