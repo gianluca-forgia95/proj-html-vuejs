@@ -94,12 +94,12 @@ var root = new Vue({
       },
       {
         image: 'img/review_2-compressor.jpg',
-        id: 'Jeff Glum',
+        id: 'Jen Wirth',
         review: ' “No bad things to say about Avada Gym, they are top notch at every corner and truly take care of their customers.” '
       },
       {
         image: 'img/review_4-compressor-2.jpg',
-        id: 'Simon Chel',
+        id: 'Jeff Glum',
         review: ' “The atmosphere at Avada Gym is amazing, the people are even better. All in all, it is a great place to work out.” '
       }
      ],

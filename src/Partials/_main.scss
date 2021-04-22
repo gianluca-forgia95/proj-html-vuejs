@@ -45,7 +45,7 @@ line-height: 30px;
 @include bgImage;
 @include centerItems;
 background-image: url('../img/gym_bkgd_bw-compressor.jpg');
-// height: 600px;
+padding: 20px 0;
 }
 
 .results , .facilities , .performance-news  {
@@ -66,9 +66,11 @@ padding: 40px 0;
 
 .img-facilities img {
  max-width: 350px;
- transition: all 1.5s;
+ transition: all 1s ease;
+ cursor: pointer;
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    filter: sepia(0.5);
   }
 }
 //quote of the day

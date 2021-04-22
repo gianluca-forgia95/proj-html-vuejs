@@ -1,21 +1,23 @@
 @media screen and (max-width: 1050px) {
 .box-results {
  max-width: 400px;
- margin-left: 20px;
+ margin-left: 10px;
 }
-
+.container {
+ max-width: 850px;
+ margin: auto;
+}
 .container-resp {
   justify-content: center;
 }
+.input-login {
+  input , button {
+    width: 300px;
+  }
 
-.img-facilities img {
- flex-basis: 50%;
 }
 
-
 }
-
-
 
 
 @media screen and (max-width: 810px) {
@@ -57,14 +59,14 @@ h2 , h3 {
 font-size: 22px;
 }
 h4 {
-font-size: 14px;
+font-size: 17px;
 }
 p {
 font-size: 13px;
 }
 //Containers 
 .container {
- max-width: 650px;
+ max-width: 600px;
  flex-wrap: wrap;
  justify-content: center;
   &.container-foot {
@@ -74,9 +76,11 @@ font-size: 13px;
 .container-sm {
 max-width: 420px;
 }
+
 //sections
 .activities {
 @include containerGridTwocol;
+justify-content: center;
 }
 
 .quote-of-the-day {
@@ -89,6 +93,15 @@ display: flex;
 justify-content: center;
 flex-wrap: wrap;
 }
+.input-login {
+  input , button {
+    width: 250px;
+  }
+}
+.box-trainer {
+margin-top: 25px;
+}
+
 .button-join {
 display: none;
 }
@@ -106,9 +119,43 @@ font-size: 12px;
 .social {
 margin-top: 20px;
 }
+
+
 }  
 
 
 
 @media screen and (max-width: 600px) {
-}  
+
+ .container {
+   max-width: 400px;
+ }
+
+ .container-sm {
+   max-width: 280px;
+ }
+ .box-activity {
+   font-size: 11px;
+ }
+.goals-text {
+  h4 {
+  font-size: 20px;
+  }
+  p {
+   font-size: 13px;
+  }
+}
+ .footer {
+   h5 {
+     font-size: 10px;
+   }
+   h6 {
+    font-size: 8px;
+     }
+ }
+  .copyright {
+   li {
+     font-size: 14px;
+   }
+  }
+}
