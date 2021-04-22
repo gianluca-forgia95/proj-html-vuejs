@@ -16,6 +16,10 @@
   }
 
 }
+.list-column {
+  font-size: 14px;
+  padding: 20px;
+}
 
 }
 
@@ -134,8 +138,12 @@ margin-top: 20px;
  .container-sm {
    max-width: 280px;
  }
+ .container-act {
+  @include containerAct;
+ }
  .box-activity {
    font-size: 11px;
+   width: 180px;
  }
 .goals-text {
   h4 {

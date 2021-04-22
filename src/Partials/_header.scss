@@ -8,19 +8,19 @@ max-width: 150px;
 }
 .links {
 @include listFlex;
+   a {
+     color: $standard-text-color;
+     text-transform: uppercase;
+      &:hover {
+       color: $active-color;
+       }
+    }
 }
-.links a{
-color: $standard-text-color;
-text-transform: uppercase;
-&:hover {
-color: $active-color;
-}
-}
+
 .burger-menu {
 display: none;
 }
 header {
-// height: 700px;
 background-image: url('../img/home-banner.jpg');
 @include bgImage;
 height: 100vh;

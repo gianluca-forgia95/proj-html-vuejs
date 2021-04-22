@@ -24,16 +24,12 @@ border: 1px solid $active-color;
 border-radius: 50%;
 height: 100px;
 width: 100px;
-font-size: 22px;
+font-size: 40px;
 transition: all 1s ease;
   &:hover {
     background-color: $active-color;
     color: $secondary-text-color;
     transform: matrix( 0.93, 0, 0, 0.93, 0, 0);
   }
- }
- &.btn-end {
-   color: $standard-text-color;
-   border: 1px solid $standard-text-color;
  }
 }

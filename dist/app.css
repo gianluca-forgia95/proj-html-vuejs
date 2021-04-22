@@ -53,7 +53,6 @@ body {
   margin: 11px;
   text-decoration: none;
 }
-
 .links a {
   color: #fff;
   text-transform: uppercase;
@@ -105,17 +104,13 @@ header {
   border-radius: 50%;
   height: 100px;
   width: 100px;
-  font-size: 22px;
+  font-size: 40px;
   transition: all 1s ease;
 }
 .btn-primary.btn-activity:hover {
   background-color: #893834;
   color: #aeafae;
   transform: matrix(0.93, 0, 0, 0.93, 0, 0);
-}
-.btn-primary.btn-end {
-  color: #fff;
-  border: 1px solid #fff;
 }
 
 h1 {
@@ -141,7 +136,7 @@ h4 {
 }
 
 .starter {
-  padding: 70px 0;
+  padding: 100px 0;
   background-color: #252a2b;
 }
 
@@ -181,6 +176,7 @@ h4 {
   border: 2px solid #aeafae;
   background: transparent;
   padding: 10px;
+  color: #aeafae;
 }
 .input-login label {
   margin-top: 20px;
@@ -198,7 +194,7 @@ h4 {
 
 .results, .facilities, .performance-news {
   background-color: #252a2b;
-  padding: 40px 0;
+  padding: 70px 0;
 }
 
 .trainers {
@@ -216,6 +212,7 @@ h4 {
 
 .img-guy {
   padding-right: 10px;
+  cursor: pointer;
 }
 
 .img-facilities img {
@@ -251,6 +248,10 @@ h4 {
   padding: 30px 0;
 }
 
+.trainers {
+  padding: 80px 0;
+}
+
 .trainer-descr {
   padding: 20px;
 }
@@ -265,7 +266,7 @@ h4 {
 }
 
 .text-news {
-  padding: 15px;
+  padding: 25px;
 }
 
 .goals {
@@ -332,8 +333,9 @@ h4 {
   text-transform: uppercase;
   font-size: 20px;
   color: #aeafae;
-  padding: 50px 0;
+  padding: 30px 0;
   font-weight: lighter;
+  margin-right: 20px;
 }
 .footer-top h6 {
   font-size: 15px;
@@ -366,6 +368,10 @@ h4 {
 .question {
   border-bottom: 1px solid #333638;
   padding-bottom: 15px;
+  line-height: 30px;
+}
+.question a:hover {
+  color: #893834;
 }
 
 .discount-img {
@@ -399,6 +405,7 @@ h4 {
 
 .img-wrapper {
   position: relative;
+  cursor: pointer;
 }
 
 .image {
@@ -496,7 +503,6 @@ h4 {
 }
 
 .box-sub, .box-up {
-  align-self: flex-start;
   background-color: #1e2123;
 }
 
@@ -539,6 +545,11 @@ h4 {
 
   .input-login input, .input-login button {
     width: 300px;
+  }
+
+  .list-column {
+    font-size: 14px;
+    padding: 20px;
   }
 }
 @media screen and (max-width: 810px) {
@@ -654,8 +665,16 @@ h4 {
     max-width: 280px;
   }
 
+  .container-act {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 80px;
+  }
+
   .box-activity {
     font-size: 11px;
+    width: 180px;
   }
 
   .goals-text h4 {

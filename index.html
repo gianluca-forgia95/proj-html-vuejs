@@ -21,52 +21,52 @@
 </head>
 <body>
 <div id="root">
-<header>
-<!-- Main Nav -->
- <div class="nav-header">
-  <div class="logo">
-    <img src="img/gym_logo_1x.png" alt="Logo">
-  </div>
-  <div class="links">
-    <ul>
-    <!-- Link nav VueJs -->
-    <li v-for="link in linksNav"><a :href="link.dest">{{ link.sect }}</a></li>
-   </ul>
-  </div>
-  <!-- Menu Responsive -->
-  <div class="burger-menu" @click="showMenu = !showMenu">
-    <div v-if="!showMenu">
-      <button><i class="fas fa-bars"></i></button>
-    </div>
-    <div v-else class="menu-resp">
-      <ul>
-        <li v-for="link in linksNav"><a :href="link.dest">{{ link.sect }}</a></li>
-       </ul>
-    </div>
-  </div>
+ <header>
+ <!-- Main Nav -->
+  <div class="nav-header">
+   <div class="logo">
+     <img src="img/gym_logo_1x.png" alt="Logo">
+   </div>
+   <div class="links">
+     <ul>
+     <!-- Link nav VueJs -->
+     <li v-for="link in linksNav"><a :href="link.dest">{{ link.sect }}</a></li>
+    </ul>
+   </div>
+   <!-- Menu Responsive -->
+   <div class="burger-menu" @click="showMenu = !showMenu">
+     <div v-if="!showMenu">
+       <button><i class="fas fa-bars"></i></button>
+     </div>
+     <div v-else class="menu-resp">
+       <ul>
+         <li v-for="link in linksNav"><a :href="link.dest">{{ link.sect }}</a></li>
+        </ul>
+     </div>
+   </div>
   <!-- /Menu Responsive -->
- </div>
+  </div>
 <!-- /Main Nav -->
 <!-- Main Text -->
-<div class="container-sm text-banner">
-  <h1>No pain no gain</h1>
-   <p>Motivation is what gets you started, Habit is what you keep going.</p>
-   <button class="btn-primary">Join us today</button>
-</div>
-<!-- /Main Text -->
-</header>
-
-<main>
-<!-- Starter Section -->
- <section class="starter">
-  <div class="container-sm">
-   <div class="box">
-    <h3>World Class Fitness</h3>
-    <img class="cross" src="img/divider-xx-red.png" alt="divider">
-    <p>At Avada Gym, everything we do from top to bottom is of the highest quality to ensure we’re equipped to help you reach your goals of a healthy and fit lifestyle.</p>
+ <div class="container-sm text-banner">
+    <h1>No pain no gain</h1>
+    <p>Motivation is what gets you started, Habit is what you keep going.</p>
+    <button class="btn-primary">Join us today</button>
   </div>
- </div>
-</section>
+<!-- /Main Text -->
+ </header>
+
+ <main>
+ <!-- Starter Section -->
+  <section class="starter">
+   <div class="container-sm">
+    <div class="box">
+     <h3>World Class Fitness</h3>
+     <img class="cross" src="img/divider-xx-red.png" alt="divider">
+     <p>At Avada Gym, everything we do from top to bottom is of the highest quality to ensure we’re equipped to help you reach your goals of a healthy and fit lifestyle.</p>
+   </div>
+  </div>
+ </section>
 <!-- /Starter Section -->
 
 <!-- Divider -->
@@ -98,7 +98,7 @@
 <!-- /Sezione Login -->
 <!-- Sezione Attività -->
 <section class="activities">
-  <div class="container">
+  <div class="container container-act">
     <!-- Box Activity VueJs -->
     <div class="box box-activity" v-for="info in activities">
       <button class="btn-primary btn-activity"><i :class="info.icon"></i></button>
@@ -196,7 +196,7 @@
     <h3>Performance News</h3>
     <img class="cross" src="img/divider-xx-red.png" alt="divider">
   </div>
-  <div class="container container-grid">
+  <div class="container container-grid container-column-resp">
     <!-- Box Column 1-->
     <div class="box box-performance">
       <!-- Box Up -->
@@ -340,7 +340,7 @@
        <p>Flexible membership packages to suit all levels of athlete and achive your fitness goals</p>
     </div>
     <div class="button-join">
-      <button class="btn-primary btn-end">Join Us</button>
+      <button class="btn-primary">Join Us</button>
     </div>
   </div>
 </section>
@@ -392,28 +392,28 @@
 <!-- Footer Bottom -->
 <div class="footer-bottom">
   <div class="container container-cnt">
+  <!-- Copyright -->
     <div class="copyright">
       <ul>
         <li v-for="info in copyrightInfo "> {{ info }}</li>
       </ul>
-       
     </div>
-
+  <!-- /Copyright -->
+  <!-- Social List -->
   <div class="social">
     <ul class="list-social" id="footer-icons">
       <li v-for="icon in socialIcons"><a :href="icon.link" :target="icon.target" ><i :class="icon.fam + icon.prefix + icon.id"></i></a></li>
     </ul>
   </div>
-      
+  <!-- /Social List -->
   </div>
 </div>
 <!-- /Footer Bottom -->
-
 </footer>
  </div> 
-    
-
-
+  
+<!-- File Js -->
 <script src="src/app.js"></script>
+<!-- /File Js -->
 </body>
 </html>

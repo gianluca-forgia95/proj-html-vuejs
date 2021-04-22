@@ -29,7 +29,9 @@ var root = new Vue({
        },
      ],
      showMenu: false,
+     
      //Dati Main
+
     //Trainers Section
      trainers: [
        {
@@ -105,18 +107,19 @@ var root = new Vue({
      ],
      
     //Dati Footer
-       //Uso un oggetto come struttura dati per l'indirizzo/e-mail/telefono
+
+       //Info Find Us
        findUs: {
         Address: '12345 North Main Street',
         Telephone: '1.800.555.6789',
         Email: 'info@your-domain.com',
       },
-      //Uso un array come struttura per le domande
+      //Info Questions
       questions: [
        'Train with free weights or your body weight?',
        'Notitional advice that will keep you training'
       ],
-     //Per gli orari uso un array di oggetti con diverse proprietà
+     //Opening Hours
       openingHours: [
          {
            type: 'Weekdays',
@@ -129,7 +132,7 @@ var root = new Vue({
            schedule: '9:00 - 19:00'
          },
       ],
-     //Per le Info copyright uso un array
+     //Copyright Info
      copyrightInfo: [
       '© Copyright 2012 - 2021 ',
       
@@ -167,7 +170,7 @@ var root = new Vue({
    
     
     
-        },
+       },
      
     
     });
