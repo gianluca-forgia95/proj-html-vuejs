@@ -481,6 +481,7 @@ h4 {
 .box.box-trainer img {
   max-width: 380px;
   transition: all 1.2s;
+  cursor: pointer;
 }
 .box.box-trainer img:hover {
   transform: scale(1.1);
