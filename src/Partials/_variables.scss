@@ -4,13 +4,16 @@ $lighter-bg: #252a2b;
 $grey-bg: #333638;
 $darker-grey: #212425;
 $active-color: #893834;
-$standard-text-color: #fff;
+$standard-text-color: #fefefe;
 $secondary-text-color: #aeafae;
+
 // Margins
 $margin-top-section: 60px;
+
 //Box Shadow
 $box-shadow-st: 0 0 10px #000;
-//Display Sections
+
+//Display Sections Mixin
 @mixin containerStandard {
 width: 1200px;
 margin: 0 auto;

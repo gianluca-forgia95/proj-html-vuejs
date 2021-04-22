@@ -54,7 +54,7 @@ body {
   text-decoration: none;
 }
 .links a {
-  color: #fff;
+  color: #fefefe;
   text-transform: uppercase;
 }
 .links a:hover {
@@ -74,7 +74,7 @@ header {
 }
 
 .text-banner {
-  color: #fff;
+  color: #fefefe;
   margin-top: 100px;
 }
 
@@ -89,12 +89,12 @@ header {
   cursor: pointer;
 }
 .btn-primary:hover {
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #fefefe;
+  color: #fefefe;
 }
 .btn-primary.btn-login {
   background: #893834;
-  color: #fff;
+  color: #fefefe;
   margin-top: 30px;
   border: none;
 }
@@ -118,20 +118,20 @@ h1 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 100px;
-  color: #fff;
+  color: #fefefe;
 }
 
 h2, h3 {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  color: #fff;
+  color: #fefefe;
   font-size: 40px;
   padding: 20px 0;
 }
 
 h4 {
-  color: #fff;
+  color: #fefefe;
   font-size: 19px;
 }
 
@@ -237,7 +237,7 @@ h4 {
 }
 .quote-of-the-day p {
   font-size: 40px;
-  color: #fff;
+  color: #fefefe;
   line-height: 50px;
 }
 .quote-of-the-day h4 {
@@ -256,7 +256,7 @@ h4 {
   padding: 20px;
 }
 .trainer-descr h5 {
-  color: #fff;
+  color: #fefefe;
   font-size: 20px;
 }
 .trainer-descr p {
@@ -278,7 +278,7 @@ h4 {
 }
 
 .goals-text {
-  color: #fff;
+  color: #fefefe;
 }
 .goals-text h4 {
   font-size: 35px;
@@ -303,7 +303,7 @@ h4 {
   opacity: 0.7;
 }
 .list-social i {
-  color: #fff;
+  color: #fefefe;
 }
 
 .divider {
@@ -470,7 +470,7 @@ h4 {
 }
 .box.box-activity h5 {
   font-size: 22px;
-  color: #fff;
+  color: #fefefe;
   padding: 25px 0;
 }
 .box.box-trainer {
@@ -493,7 +493,7 @@ h4 {
   justify-content: flex-start;
 }
 .box.box-performance h5 {
-  color: #fff;
+  color: #fefefe;
   font-weight: bold;
   font-size: 20px;
 }
@@ -551,6 +551,10 @@ h4 {
     font-size: 14px;
     padding: 20px;
   }
+
+  .box-trainer {
+    margin-left: 11px;
+  }
 }
 @media screen and (max-width: 810px) {
   .links {
@@ -562,7 +566,7 @@ h4 {
   }
   .burger-menu button {
     background: none;
-    color: #fff;
+    color: #fefefe;
     border: transparent;
     font-size: 22px;
     cursor: pointer;
@@ -579,7 +583,7 @@ h4 {
   }
   .menu-resp a {
     text-decoration: none;
-    color: #fff;
+    color: #fefefe;
     text-transform: uppercase;
     line-height: 20px;
   }
@@ -617,6 +621,11 @@ h4 {
     display: grid;
     grid-template-columns: repeat(2, 300px);
     justify-content: center;
+  }
+
+  .container-overflow {
+    overflow-x: auto;
+    width: 400px;
   }
 
   .quote-of-the-day p {

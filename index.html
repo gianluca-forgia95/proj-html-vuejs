@@ -24,13 +24,16 @@
  <header>
  <!-- Main Nav -->
   <div class="nav-header">
+    <!-- Logo -->
    <div class="logo">
      <img src="img/gym_logo_1x.png" alt="Logo">
    </div>
+   <!-- /Logo -->
    <div class="links">
      <ul>
      <!-- Link nav VueJs -->
      <li v-for="link in linksNav"><a :href="link.dest">{{ link.sect }}</a></li>
+     <!-- /Link nav VueJs -->
     </ul>
    </div>
    <!-- Menu Responsive -->
@@ -47,13 +50,13 @@
   <!-- /Menu Responsive -->
   </div>
 <!-- /Main Nav -->
-<!-- Main Text -->
+<!-- Hero Text -->
  <div class="container-sm text-banner">
     <h1>No pain no gain</h1>
     <p>Motivation is what gets you started, Habit is what you keep going.</p>
     <button class="btn-primary">Join us today</button>
   </div>
-<!-- /Main Text -->
+<!-- /Hero Text -->
  </header>
 
  <main>
@@ -96,6 +99,7 @@
   </div>
 </section>
 <!-- /Sezione Login -->
+
 <!-- Sezione Attività -->
 <section class="activities">
   <div class="container container-act">
@@ -110,6 +114,7 @@
   </div>
 </section>
 <!-- /Sezione Attività -->
+
 <!-- Sezione Real World Results -->
  <section class="results">
    <div class="box">
@@ -129,10 +134,8 @@
      </div>
      <!-- /Box Results VueJs -->
   </div>
- 
  </section>
 <!-- /Sezione Real World Results -->
-
 
 <!-- Sezione Facilities -->
  <section class="facilities">
@@ -140,7 +143,7 @@
      <h3>High Performance Facilities</h3>
      <img class="cross" src="img/divider-xx-red.png" alt="divider">
    </div>
-   <div class="container container-grid">
+   <div v-dragscroll class="container container-grid container-overflow">
      <!-- Images facilities -->
      <div class="img-facilities" v-for="img in imagesFacilities">
        <img :src="img" alt="img home-facilities">
@@ -149,6 +152,7 @@
    </div>
  </section>
 <!-- /Sezione Facilities -->
+
 <!-- Sezione Quote of the day -->
 <section class="quote-of-the-day">
   <div class="container-sm">
@@ -158,6 +162,7 @@
   </div>
 </section>
 <!-- /Sezione Quote of the day -->
+
 <!-- Sezione Trainers -->
  <section class="trainers">
    <div class="box">
@@ -184,6 +189,7 @@
    </div>
  </section>
 <!-- /Sezione Trainers -->
+
 <!-- Divider -->
 <div class="divider">
   <div class="divider-bottom trainer-div"></div>
@@ -196,7 +202,8 @@
     <h3>Performance News</h3>
     <img class="cross" src="img/divider-xx-red.png" alt="divider">
   </div>
-  <div class="container container-grid container-column-resp">
+  <!-- Container Columns -->
+  <div v-dragscroll class="container container-grid container-overflow">
     <!-- Box Column 1-->
     <div class="box box-performance">
       <!-- Box Up -->
@@ -327,11 +334,13 @@
    </div>
   <!-- Box Column 3 -->
   </div>
+  <!-- /Container Columns -->
   <div class="box">
     <button class="btn-primary">Read All Articles</button>
   </div>
 </section>
 <!-- /Sezione Performance News -->
+
 <!-- Sezione Goals -->
 <section class="goals">
   <div class="container container-cnt">
@@ -345,6 +354,7 @@
   </div>
 </section>
 <!-- /Sezione Goals -->
+
 </main>
 
 <footer>
@@ -411,6 +421,11 @@
 <!-- /Footer Bottom -->
 </footer>
  </div> 
+
+ <!-- Library Vue Dragscroll -->
+ <script src="https://unpkg.com/vue"></script>
+ <script src="https://unpkg.com/vue-dragscroll"></script>
+ <!-- /Library Vue Dragscroll -->
   
 <!-- File Js -->
 <script src="src/app.js"></script>
