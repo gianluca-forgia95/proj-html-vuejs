@@ -29,10 +29,11 @@
   </div>
   <div class="links">
     <ul>
-    <!-- Con la direttiva v-for stampo i link della nav -->
+    <!-- Link nav VueJs -->
     <li v-for="link in linksNav"><a :href="link.dest">{{ link.sect }}</a></li>
    </ul>
   </div>
+  <!-- Menu Responsive -->
   <div class="burger-menu" @click="showMenu = !showMenu">
     <div v-if="!showMenu">
       <button><i class="fas fa-bars"></i></button>
@@ -42,9 +43,8 @@
         <li v-for="link in linksNav"><a :href="link.dest">{{ link.sect }}</a></li>
        </ul>
     </div>
-   
   </div>
-  
+  <!-- /Menu Responsive -->
  </div>
 <!-- /Main Nav -->
 <!-- Main Text -->
@@ -69,18 +69,16 @@
 </section>
 <!-- /Starter Section -->
 
-
 <!-- Divider -->
 <div class="divider">
   <div class="divider-bottom"></div>
 </div>
 <!-- /Divider -->
 
-
-
 <!-- Sezione Login -->
 <section class="login">
   <div class="container">
+    <!-- Box Login -->
    <div class="box-login">
       <div class="img-login">
         <img src="img/home_img-compressor-400x222.jpg" alt="Login img">
@@ -94,18 +92,21 @@
         <button class="btn-primary btn-login">Start Now!</button>
       </div>
     </div>
+    <!-- /Box Login -->
   </div>
 </section>
 <!-- /Sezione Login -->
 <!-- Sezione Attività -->
 <section class="activities">
   <div class="container">
+    <!-- Box Activity VueJs -->
     <div class="box box-activity" v-for="info in activities">
       <button class="btn-primary btn-activity"><i :class="info.icon"></i></button>
       <h5>{{ info.title }}</h5>
       <img class="single-cross" :src=" info.divider " alt="divider">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us.</p>
     </div>
+    <!-- /Box Activity VueJs -->
   </div>
 </section>
 <!-- /Sezione Attività -->
@@ -115,8 +116,8 @@
      <h3>Real World Results</h3>
      <img class="cross" src="img/divider-xx-red.png" alt="divider">
    </div>
-<!-- First Row -->
    <div class="container container-two-wrap">
+    <!-- Box Results VueJs -->
      <div class="box-results" v-for="info in realWorldResults">
        <div class="img-guy">
          <img :src="info.image" alt="reviewer img">
@@ -126,6 +127,7 @@
          <h5>– {{ info.id }}</h5>
        </div>
      </div>
+     <!-- /Box Results VueJs -->
   </div>
  
  </section>
@@ -139,9 +141,11 @@
      <img class="cross" src="img/divider-xx-red.png" alt="divider">
    </div>
    <div class="container container-grid">
+     <!-- Images facilities -->
      <div class="img-facilities" v-for="img in imagesFacilities">
        <img :src="img" alt="img home-facilities">
      </div>
+     <!-- /Images facilities -->
    </div>
  </section>
 <!-- /Sezione Facilities -->
@@ -364,12 +368,12 @@
    </div>
    <!-- /Recent Posts -->
    <!-- Opening Hours -->
-   <div class="box">
+   <div class="box-opening-hours">
      <h5>Opening Hours</h5>
       <ul class="list-column">
         <li v-for="info in openingHours">
-          <h6>{{ info.type }} {{ info.range }}</h6>
-          <p>{{ info.schedule }}</p>
+          <h6 class="type-range">{{ info.type }} {{ info.range }}</h6>
+          <p class="schedule">{{ info.schedule }}</p>
         </li>
       </ul>
    </div>
@@ -401,7 +405,6 @@
     </ul>
   </div>
       
-  
   </div>
 </div>
 <!-- /Footer Bottom -->

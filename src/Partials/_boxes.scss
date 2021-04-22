@@ -1,0 +1,91 @@
+//boxes
+.box {
+    @include boxColumn;
+    align-items: center;
+       
+     p {
+      color: $secondary-text-color;
+      font-size: 22px;
+      margin-top: 60px;
+      }
+     img {
+        width: 100%;
+        }
+        //Box Sezione Activity
+      &.box-activity {
+         text-align: center;
+         margin: 20px;
+         max-width: 250px;
+         height: auto;
+           p {
+            margin-top: 25px;
+            line-height: 22px;
+            font-size: 18px;
+           }
+          h5 {
+            font-size: 22px;
+            color: $standard-text-color;
+            padding: 25px 0;
+          }
+      }
+      //Box Sezione Trainer
+      &.box-trainer {
+      max-width: 380px;
+      background-color: $grey-bg;
+      align-items: flex-start;
+         img {
+         max-width: 380px;
+         transition: all 1.2s;
+          &:hover {
+            transform: scale(1.1);
+          }
+         }
+         p {
+          font-size: 18px;
+          margin-top: 10px;
+         }
+      
+      }
+      //Box Sezione Performance
+      &.box-performance {
+      justify-content: flex-start;
+       h5 {
+       color: $standard-text-color;
+       font-weight: bold;
+       font-size: 20px;
+       }
+       p {
+       font-size: 18px;
+       margin-top: 11px;
+       }
+      }
+     
+   }
+   
+   //Box up/sub
+   .box-sub , .box-up {
+   align-self: flex-start;
+   background-color: $darker-bg;
+   }
+   .box-sub {
+    margin-top: 20px;
+   }
+   
+   //Box Results
+   .box-results {
+    display: flex;
+    padding: 40px;
+    background-color: $darker-bg;
+    max-width: 550px;
+    color: $secondary-text-color;
+    margin-bottom: 20px;
+    box-shadow: $box-shadow-st;
+     p {
+      font-size: 18px;
+      font-style: italic;
+     }
+     h5 {
+       font-size: 22px;
+       line-height: 40px;
+     }
+   }

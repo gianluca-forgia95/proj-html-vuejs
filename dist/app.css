@@ -33,86 +33,6 @@ body {
   text-align: center;
 }
 
-.box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.box p {
-  color: #aeafae;
-  font-size: 22px;
-  margin-top: 60px;
-}
-.box img {
-  width: 100%;
-}
-.box.box-activity {
-  text-align: center;
-  margin: 20px;
-  max-width: 250px;
-  height: auto;
-}
-.box.box-activity p {
-  margin-top: 25px;
-  line-height: 22px;
-  font-size: 18px;
-}
-.box.box-activity h5 {
-  font-size: 22px;
-  color: #fff;
-  padding: 25px 0;
-}
-.box.box-trainer {
-  max-width: 380px;
-  background-color: #333638;
-  align-items: flex-start;
-}
-.box.box-trainer img {
-  max-width: 380px;
-  transition: all 1.2s;
-}
-.box.box-trainer img:hover {
-  transform: scale(1.1);
-}
-.box.box-performance {
-  justify-content: flex-start;
-}
-.box.box-performance h5 {
-  color: #fff;
-  font-weight: bold;
-  font-size: 20px;
-}
-.box.box-performance p {
-  font-size: 18px;
-  margin-top: 11px;
-}
-
-.box-sub, .box-up {
-  align-self: flex-start;
-  background-color: #1e2123;
-}
-
-.box-sub {
-  margin-top: 20px;
-}
-
-.box-results {
-  display: flex;
-  padding: 40px;
-  background-color: #1e2123;
-  max-width: 550px;
-  color: #aeafae;
-  margin-bottom: 20px;
-}
-.box-results p {
-  font-size: 18px;
-  font-style: italic;
-}
-.box-results h5 {
-  font-size: 22px;
-  line-height: 40px;
-}
-
 .nav-header {
   display: flex;
   justify-content: space-between;
@@ -302,6 +222,7 @@ h4 {
   max-width: 350px;
   transition: all 1s ease;
   cursor: pointer;
+  box-shadow: 0 0 10px #000;
 }
 .img-facilities img:hover {
   transform: scale(1.1);
@@ -376,6 +297,9 @@ h4 {
   justify-content: center;
   border-radius: 5px;
   cursor: pointer;
+}
+.list-social li:hover {
+  opacity: 0.7;
 }
 .list-social i {
   color: #fff;
@@ -511,6 +435,91 @@ h4 {
 }
 .text-overlay i {
   margin: 10px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box p {
+  color: #aeafae;
+  font-size: 22px;
+  margin-top: 60px;
+}
+.box img {
+  width: 100%;
+}
+.box.box-activity {
+  text-align: center;
+  margin: 20px;
+  max-width: 250px;
+  height: auto;
+}
+.box.box-activity p {
+  margin-top: 25px;
+  line-height: 22px;
+  font-size: 18px;
+}
+.box.box-activity h5 {
+  font-size: 22px;
+  color: #fff;
+  padding: 25px 0;
+}
+.box.box-trainer {
+  max-width: 380px;
+  background-color: #333638;
+  align-items: flex-start;
+}
+.box.box-trainer img {
+  max-width: 380px;
+  transition: all 1.2s;
+}
+.box.box-trainer img:hover {
+  transform: scale(1.1);
+}
+.box.box-trainer p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.box.box-performance {
+  justify-content: flex-start;
+}
+.box.box-performance h5 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+.box.box-performance p {
+  font-size: 18px;
+  margin-top: 11px;
+}
+
+.box-sub, .box-up {
+  align-self: flex-start;
+  background-color: #1e2123;
+}
+
+.box-sub {
+  margin-top: 20px;
+}
+
+.box-results {
+  display: flex;
+  padding: 40px;
+  background-color: #1e2123;
+  max-width: 550px;
+  color: #aeafae;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px #000;
+}
+.box-results p {
+  font-size: 18px;
+  font-style: italic;
+}
+.box-results h5 {
+  font-size: 22px;
+  line-height: 40px;
 }
 
 @media screen and (max-width: 1050px) {

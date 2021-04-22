@@ -8,7 +8,8 @@ $standard-text-color: #fff;
 $secondary-text-color: #aeafae;
 // Margins
 $margin-top-section: 60px;
-
+//Box Shadow
+$box-shadow-st: 0 0 10px #000;
 //Display Sections
 @mixin containerStandard {
 width: 1200px;
