@@ -139,7 +139,7 @@ body {
   text-transform: uppercase;
 }
 .links a:hover {
-  color: #d5625f;
+  color: #893834;
 }
 
 .burger-menu {
@@ -174,14 +174,14 @@ header {
   color: #fff;
 }
 .btn-primary.btn-login {
-  background: #d5625f;
+  background: #893834;
   color: #fff;
   margin-top: 30px;
   border: none;
 }
 .btn-primary.btn-activity {
-  color: #d5625f;
-  border: 1px solid #d5625f;
+  color: #893834;
+  border: 1px solid #893834;
   border-radius: 50%;
   height: 100px;
   width: 100px;
@@ -189,7 +189,7 @@ header {
   transition: all 1s ease;
 }
 .btn-primary.btn-activity:hover {
-  background-color: #d5625f;
+  background-color: #893834;
   color: #aeafae;
   transform: matrix(0.93, 0, 0, 0.93, 0, 0);
 }
@@ -470,7 +470,7 @@ h4 {
   display: flex;
 }
 .social li {
-  background-color: #d5625f;
+  background-color: #893834;
 }
 
 .img-wrapper {
@@ -488,7 +488,7 @@ h4 {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #d5625f;
+  background-color: #893834;
   overflow: hidden;
   width: 0;
   height: 100%;
